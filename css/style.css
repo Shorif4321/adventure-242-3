@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.span{
+    height: 5px;
+    width: 172px;
+    display: inline-block;
+    background: red;
+    border-radius: 5px;
+}
+
+header{
+    background-image: url(../images/dawn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding: 0 5% 0 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.863);
+    background-blend-mode: multiply;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+}
+.logo a h5{font-weight: 600;}
+.logo a h5 span{
+    font-weight: 100;
+}
+
+nav{}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 0 0 15px;
+    text-transform: capitalize;
+}
+
+/* ==== banner section ==== */
+.banner{
+    text-align: center;
+    padding: 50px 0 100px 0px;
+}
+.banner h4{
+    font-size: 25px;
+    font-style: italic;
+    margin: 70px 0 5px 0;
+}
+
+
+.banner h1{
+    font-size: 70px;
+}
+.banner button{
+    background: red;
+    border: 1px solid red;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+/* === upcomming event ===== */
+.event-main{
+    padding: 50px 14%;
+    text-align: center;
+}
+.event-main h3{
+    font-size: 40px;
+    margin: 20px 0 0 0;
+}
+
+.event{
+    display: flex;
+    margin: 30px 0 0 0;
+}
+.event-item{
+    width: 50%;
+    margin: 20px;
+    /* text-align: center; */
+}
+.event-item img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.event-item h5{
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+.event-item p{}
+.event-item a{
+    color: red;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
