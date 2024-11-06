@@ -18,6 +18,7 @@ img{
 h1{
     font-size: 70px;
 }
+
 .span{
     height: 5px;
     width: 172px;
@@ -260,3 +261,137 @@ footer{
   .bottom-to-top:hover {
     background-color: #555555dc;
   }
+
+
+  /* ====== media queries ====== */
+  /* mobile device */
+@media only screen and (max-width:668px){
+    h1{
+        font-size: 35px;
+    }   
+    .span{
+        height: 3px;
+        width: 140px;
+    }
+
+    .navbar{
+        display: block;
+    }
+    .logo a{
+        font-size: 18px;
+        display: block;
+        text-align: center;
+    }
+    .logo a h5{
+        margin: 15px 0 20px 0;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav ul li a{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0 5px 0 5px;
+    }
+
+    /* ==== banner section ==== */
+    .banner{
+        padding: 1px 0 60px 0px;
+    
+    }
+    .banner h4{
+        font-size: 17px;
+        margin: 161px 0 5px 0;
+    }
+    .banner button{
+        padding: 8px 24px;
+        font-size: 18px;
+    }
+}
+
+/* ======= landscape mobile, tab device ======= */
+@media only screen and (min-width:669px) and (max-width:768px){
+    h1{
+        font-size: 40px;
+    }   
+    .span{
+        height: 4px;
+        width: 150px;
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    .logo a{
+        font-size: 19px;
+        display: block;
+        text-align: center;
+    }
+    .logo a h5{
+        margin: 20px 0 20px 0;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav ul li a{
+        font-size: 17px;
+        font-weight: 500;
+        padding: 0 5px 0 5px;
+    }
+
+    /* ==== banner section ==== */
+    .banner{
+        padding: 1px 0 60px 0px;
+    
+    }
+    .banner h4{
+        font-size: 18px;
+        margin: 161px 0 5px 0;
+    }
+    .banner button{
+        padding: 10px 24px;
+        font-size: 18px;
+    }
+   
+}
+
+/* ===== tab landscape, large tab, tv er moto choto mnitor / small monito */
+@media only screen and (min-width:769px) and (max-width:992px) {
+    h1{
+        font-size: 50px;
+    }   
+    .span{
+        height: 4px;
+        width: 150px;
+    }
+
+
+     /* ==== banner section ==== */
+    .banner h4{
+        font-size: 20px;
+        margin: 161px 0 5px 0;
+    }
+    .banner button{
+        padding: 12px 26px;
+        font-size: 20px;
+    }
+     
+}
+
+/* ===== samall monitor / small laptop ====== */
+@media only screen and (min-width:993px) and (max-width:1024px) {
+    h1{
+        font-size: 60px;
+    } 
+    
+}
+
+/* ===== large laptop and normal monitor (default desing bese on client requiremnts) ===== */
+/* @media only screen and (min-width:1025px) and (max-width:1440px) {
+    .navbar{
+        background-color:red;
+    } 
+} */
+
+/* ===== 1441px ==> large monitor (default desing) ===== */
