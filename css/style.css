@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
 html {
@@ -6,7 +13,8 @@ html {
 
 body{
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 17px;
     font-family: "Roboto", sans-serif;
 }
@@ -39,13 +47,21 @@ header{
 }
 
 .navbar{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed;
     left: 5%;
     right: 5%;
     background-color: transparent; 
+    -webkit-transition: background-color 0.3s; 
+    -o-transition: background-color 0.3s; 
     transition: background-color 0.3s;
     z-index: 1000; 
 }
@@ -57,8 +73,6 @@ header{
     padding: 0px 5%;
 }
 
-
-.logo{}
 .logo a{
     color: white;
     text-decoration: none;
@@ -74,7 +88,6 @@ header{
     font-weight: 100;
 }
 
-nav{}
 nav ul{
     margin: 0;
     padding: 0;
@@ -104,10 +117,6 @@ nav ul li a{
     margin: 161px 0 5px 0;
 }
 
-
-.banner h1{
-    
-}
 .banner button{
     background: red;
     border: 1px solid red;
@@ -116,6 +125,8 @@ nav ul li a{
     color: white;
     font-size: 20px;
     letter-spacing: 1px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
@@ -136,6 +147,8 @@ nav ul li a{
 }
 
 .event{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 30px 0 0 0;
 }
@@ -147,14 +160,15 @@ nav ul li a{
 .event-item img{
     height: 350px;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 10px;
 }
 .event-item h5{
     font-size: 20px;
     margin: 10px 0 0 0;
 }
-.event-item p{}
+
 .event-item a{
     color: red;
     letter-spacing: 3px;
@@ -172,8 +186,12 @@ nav ul li a{
     background-blend-mode: multiply;
     padding: 60px;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 .exlopre-item{
@@ -199,8 +217,12 @@ margin: 40px 0 0px 0px;
     padding: 5%;
 }
 .tour{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .tour-item{
     width: 33%;
@@ -221,15 +243,17 @@ margin: 40px 0 0px 0px;
     font-size: 20px;
     text-transform: capitalize;
 }
-.tour-item img{}
+
 .img-one{
     height: 280px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin: 0 0 25px 0;
 }
 .img-two{
     height: 370px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin: 0 0 25px 0;
 }
 
@@ -261,137 +285,3 @@ footer{
   .bottom-to-top:hover {
     background-color: #555555dc;
   }
-
-
-  /* ====== media queries ====== */
-  /* mobile device */
-@media only screen and (max-width:668px){
-    h1{
-        font-size: 35px;
-    }   
-    .span{
-        height: 3px;
-        width: 140px;
-    }
-
-    .navbar{
-        display: block;
-    }
-    .logo a{
-        font-size: 18px;
-        display: block;
-        text-align: center;
-    }
-    .logo a h5{
-        margin: 15px 0 20px 0;
-    }
-    nav ul{
-        text-align: center;
-    }
-    nav ul li a{
-        font-size: 16px;
-        font-weight: 500;
-        padding: 0 5px 0 5px;
-    }
-
-    /* ==== banner section ==== */
-    .banner{
-        padding: 1px 0 60px 0px;
-    
-    }
-    .banner h4{
-        font-size: 17px;
-        margin: 161px 0 5px 0;
-    }
-    .banner button{
-        padding: 8px 24px;
-        font-size: 18px;
-    }
-}
-
-/* ======= landscape mobile, tab device ======= */
-@media only screen and (min-width:669px) and (max-width:768px){
-    h1{
-        font-size: 40px;
-    }   
-    .span{
-        height: 4px;
-        width: 150px;
-    }
-
-    .navbar{
-        display: block;
-    }
-
-    .logo a{
-        font-size: 19px;
-        display: block;
-        text-align: center;
-    }
-    .logo a h5{
-        margin: 20px 0 20px 0;
-    }
-    nav ul{
-        text-align: center;
-    }
-    nav ul li a{
-        font-size: 17px;
-        font-weight: 500;
-        padding: 0 5px 0 5px;
-    }
-
-    /* ==== banner section ==== */
-    .banner{
-        padding: 1px 0 60px 0px;
-    
-    }
-    .banner h4{
-        font-size: 18px;
-        margin: 161px 0 5px 0;
-    }
-    .banner button{
-        padding: 10px 24px;
-        font-size: 18px;
-    }
-   
-}
-
-/* ===== tab landscape, large tab, tv er moto choto mnitor / small monito */
-@media only screen and (min-width:769px) and (max-width:992px) {
-    h1{
-        font-size: 50px;
-    }   
-    .span{
-        height: 4px;
-        width: 150px;
-    }
-
-
-     /* ==== banner section ==== */
-    .banner h4{
-        font-size: 20px;
-        margin: 161px 0 5px 0;
-    }
-    .banner button{
-        padding: 12px 26px;
-        font-size: 20px;
-    }
-     
-}
-
-/* ===== samall monitor / small laptop ====== */
-@media only screen and (min-width:993px) and (max-width:1024px) {
-    h1{
-        font-size: 60px;
-    } 
-    
-}
-
-/* ===== large laptop and normal monitor (default desing bese on client requiremnts) ===== */
-/* @media only screen and (min-width:1025px) and (max-width:1440px) {
-    .navbar{
-        background-color:red;
-    } 
-} */
-
-/* ===== 1441px ==> large monitor (default desing) ===== */
